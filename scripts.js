@@ -10,20 +10,7 @@ document.querySelector('.close').addEventListener('click', () => {
 })
 
 
-setTimeout(() => {
-    const header = document.querySelector('header');
-    const main = document.querySelector('main');
-    const footer = document.querySelector('footer');
-    const splash = document.querySelector('.splash');
 
-    header.style.display = 'initial';
-    main.style.display = 'initial';
-    footer.style.display = 'initial';
-
-    splash.style.display = 'none';
-
-
-}, 5000);
 
 
 document.getElementById('navMission').addEventListener('touchend', () => {
@@ -49,10 +36,9 @@ observer1 = new IntersectionObserver((entries) => {
 
   
 const socialLinks = document.querySelector('.social-links');
-observer1.observe(socialLinks);
-
-
-
+if (socialLinks) {
+  observer1.observe(socialLinks);
+}
 
 observer2 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -65,7 +51,9 @@ observer2 = new IntersectionObserver((entries) => {
   });
 
 const mainMsg = document.querySelector('.main-msg');
-observer2.observe(mainMsg);
+if(mainMsg) {
+  observer2.observe(mainMsg);
+}
 
 
 observer3 = new IntersectionObserver((entries) => {
@@ -79,4 +67,6 @@ observer3 = new IntersectionObserver((entries) => {
   });
 
 const subMsg = document.querySelector('.sub-msg');
-observer3.observe(subMsg);
+if(subMsg) {
+  observer3.observe(subMsg);
+}
