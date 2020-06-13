@@ -8,6 +8,17 @@ mousePressed = (evt) => {
 			if (mouseIntersectsGui(width / 2 - 100, width / 2+100 , height/2+150, height/2 +200)) {
 				reset();
 			}
+
+			if(mouseIntersectsGui(width / 2 - 85, width / 2 + 150 , height / 2 + 100, height/2 + 230)) {
+				if(game.player.highscore <= game.player.score){
+					const score = game.player.score.toLocaleString();
+
+					aBtn = document.getElementById('whatsappShare');
+					// aBtn.href = 'whatsapp://send?text=DirectChandrar High Score ' + score + ' via https://directchandrar.com';	
+					aBtn.href = 'whatsapp://send?text=DirectChandrar High Score ' + score + ' via https://directchandrar.com'
+					aBtn.click();
+				}
+			}
 		} else {
 			if (evt.button === 2) {
 				if (game.player.inventory.mines) {
