@@ -283,13 +283,14 @@ nav {
 .social-links ul{
   display: flex;
     justify-content: center;
+    color: #403588;
 }
 .social-links ul li {
   margin: 0 30px;
 }
 .social-links ul li a {
-  font-size: 5rem;
-  color: white;
+  font-size: 7rem;
+  /* color: white; */
 }
 
 .testimonial-text-box {
@@ -315,14 +316,23 @@ nav {
 }
 
 /* Begin Adventure css */
-.adventure-grid {
+.social-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2.5rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
-.adventure-grid p {
+.social-grid p {
     color: rgba(0, 0, 0, 0.7);
+}
+
+.social-title p{
+  font-size: 2rem;
+}
+
+.social-adventure {
+  padding: 2rem 0;
 }
 
 footer {
