@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta property="og:title" content="Direct Chandrar" />
+    <meta
+      property="og:description"
+      content="A man with a vision to send man to moon in his unique way"
+    />
+    <meta property="og:image" content="./images/profile.png" />
+    <meta property="og:url" content="https://directchandrar.com/index.htm" />
 
-    <meta property="og:title" content="Direct Chandrar">
-    <meta property="og:description" content="A man with a vision to send man to moon in his unique way">
-    <meta property="og:image" content="./images/profile.png">
-    <meta property="og:url" content="https://directchandrar.com/index.htm">
+    <meta property="twitter:title" content="Direct Chandrar" />
+    <meta
+      property="twitter:description"
+      content="A man with a vision to send man to moon in his unique way"
+    />
+    <meta property="twitter:image" content="./images/profile.png" />
 
-    <meta property="twitter:title" content="Direct Chandrar">
-    <meta property="twitter:description" content="A man with a vision to send man to moon in his unique way">
-    <meta property="twitter:image" content="./images/profile.png">
+    <meta
+      name="Description"
+      content="Direct, Chandrar, MJ, mj, direct chandrar"
+    />
+    <meta
+      name="google-site-verification"
+      content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="
+    />
 
-    <meta name="Description" CONTENT="Direct, Chandrar, MJ, mj, direct chandrar">
-    <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
-    
-    <meta name="googlebot" content="index, follow">
+    <meta name="googlebot" content="index, follow" />
 
     <meta charset="UTF-8" />
     <meta
@@ -22,6 +33,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel=icon href=./favicon.png>
     <title>Direct Chandrar | Game</title>
     <!--Ion Icons-->
     <link
@@ -67,48 +79,22 @@
               <a href="#" class="nav-link">Mission</a>
             </li>
             <li id="navVision" class="nav-item">
-            <a href="#" class="nav-link">Vision</a>
+              <a href="#" class="nav-link">Vision</a>
             </li>
             <li id="navGame" class="nav-item">
               <a href="#" class="nav-link current">Play the Game</a>
             </li>
             <li class="nav-item">
-              <a href="./contact.html" class="nav-link current">Contact Us</a>
+              <a href="./contact.html" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-
     <main id="game-container">
-      <!--  <div>
-         <div class="game-rule">
-          <h3 class="rule-title">How To Play</h3>
-          <p>
-            Prevent the moon from the rockets from Earth
-          </p>
-
-          <br />
-
-          <h3 class="rule-title">Controls</h3>
-          <p>
-            Default Attack - Left Click/Tap on Individual Rockets to bomb them
-          </p>
-        </div> 
-        <div id="playButton" class="play-btn">Play Game</div>
-      </div>-->
-
       <div id="game-section"></div>
     </main>
-
-    <script>
-      //   let playBtn = document.getElementById("playButton");
-      //   playBtn.addEventListener("click", () => {
-      //     document
-      //       .getElementById("game-section")
-      //       .scrollIntoView({ block: "start", behavior: "smooth" });
-      //   });
-    </script>
+    <a id="whatsappShare" href=""></a>
 
     <audio
       name="explosion1"
@@ -132,9 +118,21 @@
       autostart="false"
     ></audio>
 
-    <audio  name="mjMission" id="mjMission" hidden="true" autostart="false" src="./assets//mj-mission.mp3"></audio>
-    <audio  name="mjVision" id="mjVision" hidden="true" autostart="false" src="./assets//mj-vision.mp3"></audio>
-    
+    <audio
+      name="mjMission"
+      id="mjMission"
+      hidden="true"
+      autostart="false"
+      src="./assets//mj-mission.mp3"
+    ></audio>
+    <audio
+      name="mjVision"
+      id="mjVision"
+      hidden="true"
+      autostart="false"
+      src="./assets//mj-vision.mp3"
+    ></audio>
+
     <script src="classes/events.js"></script>
     <script src="./classes/sketch.js"></script>
     <script src="./classes/game.js"></script>
@@ -153,17 +151,19 @@
     <script src="classes/asteroid.js"></script>
 
     <script type="text/javascript">
-
-      window.document.querySelector(".open").addEventListener("touchend", () => {
-        document.querySelector(".nav-list").classList.add("active");
-      });
+      window.document
+        .querySelector(".open")
+        .addEventListener("touchend", () => {
+          document.querySelector(".nav-list").classList.add("active");
+        });
 
       // Close the menu on click
-      window.document.querySelector(".close").addEventListener("touchend", () => {
-        document.querySelector(".nav-list").classList.remove("active");
-      });
+      window.document
+        .querySelector(".close")
+        .addEventListener("touchend", () => {
+          document.querySelector(".nav-list").classList.remove("active");
+        });
 
-      
       window.document.querySelector(".open").addEventListener("click", () => {
         document.querySelector(".nav-list").classList.add("active");
       });
@@ -173,26 +173,38 @@
         document.querySelector(".nav-list").classList.remove("active");
       });
 
-      document.getElementById('navHome').addEventListener('touchend', () => {
-          window.location.href = './index.html';
+      document.getElementById("navHome").addEventListener("touchend", () => {
+        window.location.href = "./index.html";
       });
 
-      document.getElementById('navMission').addEventListener('touchend', () => {
-        const mjMission = document.getElementById('mjMission');
+      document.getElementById("navMission").addEventListener("touchend", () => {
+        const mjMission = document.getElementById("mjMission");
         mjMission.play();
-      })
+      });
 
-      document.getElementById('navVision').addEventListener('touchend', () => {
-        const mjVision = document.getElementById('mjVision');
+      document.getElementById("navVision").addEventListener("touchend", () => {
+        const mjVision = document.getElementById("mjVision");
         mjVision.play();
-      })
-
-
+      });
     </script>
-    
+
     <!-- hitwebcounter Code START -->
     <a href="https://www.hitwebcounter.com" target="_blank">
-      <img style="width: 64px; height: 20px; margin-left: 40%; position: absolute; top: 72px; z-index: 10; right: 11px;" src="https://hitwebcounter.com/counter/counter.php?page=7439162&style=0007&nbdigits=8&type=page&initCount=10" title="Web Counter" Alt="counter free"   border="0" >
-    </a>  
+      <img
+        style="
+          width: 64px;
+          height: 20px;
+          margin-left: 40%;
+          position: absolute;
+          top: 72px;
+          z-index: 10;
+          right: 11px;
+        "
+        src="https://hitwebcounter.com/counter/counter.php?page=7439162&style=0007&nbdigits=8&type=page&initCount=10"
+        title="Web Counter"
+        alt="counter free"
+        border="0"
+      />
+    </a>
   </body>
 </html>

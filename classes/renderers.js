@@ -35,7 +35,7 @@ const rocketRenderer = (x, y, rocketWidth, rocketHeight, accentColor) => {
 const tailRenderer = (x, y, rocketWidth, rocketHeight) => {
 	push();
 	const originY = y + rocketHeight;
-	fill(color(random([ 'red', 'orange', 'yellow' ])));
+	fill(color(random(['red', 'orange', 'yellow'])));
 	beginShape();
 	vertex(x, originY);
 	vertex(x - rocketWidth * 1.1, originY + rocketHeight / 4 + random(-1, 5));
@@ -211,7 +211,7 @@ const showGameOver = () => {
 	fill(0);
 
 	textFont(font);
-	textSize(40);
+	textSize(35);
 	textAlign(CENTER, CENTER);
 	fill(color('white'));
 	text(
@@ -223,12 +223,27 @@ const showGameOver = () => {
 		height / 2
 	);
 
+	if (newHighScore) {
+
+		stroke(255, 255, 255);
+		strokeWeight(1);
+
+		fill(color('#29e629'));
+		rect(width / 2 - 85, height / 2 + 100, width / 2 - 10, 40);
+		fill(color('white'));
+		textSize(20);
+		text('Share on Whatsapp', width / 2 + 5, height / 2 + 119);
+
+	}
+
+
+
 	fill(color('black'));
-	rect(width / 2 - 100, height/2+150, width / 2 ,  55);
+	rect(width / 2 - 80, height / 2 + 150, width / 2, 55);
 
 	fill(color('white'));
 	textSize(24);
-	text('Try Again', width / 2-15, height/2 + 180);
+	text('Try Again', width / 2 - 15, height / 2 + 180);
 	pop();
 	noLoop();
 };
@@ -247,7 +262,7 @@ const showStartScreen = () => {
 	text('Direct Chandrar', width / 2, height / 2);
 
 	fill(color('#352582'));
-	rect(width / 2 - 80, height/2+15, width / 2 ,  height/2 -260);
+	rect(width / 2 - 80, height / 2 + 15, width / 2, height / 2 - 260);
 
 	fill(color('white'));
 	textSize(24);
@@ -258,7 +273,7 @@ const showStartScreen = () => {
 	textAlign(LEFT);
 	fill(color('white'));
 	textSize(15);
-	text('Bad Guys sent on Chandrar by Mr.MJ\nwants to return back,\nDestroy the rockets before they hit our planet!', width/2-160, height/2+160);
+	text('Bad Guys sent on Chandrar by Mr.MJ\nwants to return back,\nDestroy the rockets before they hit our planet!', width / 2 - 160, height / 2 + 160);
 
 	// fill(color('#ffff'));
 	// rect(25, height - 75, 50, 50);
