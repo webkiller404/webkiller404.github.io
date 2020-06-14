@@ -75,16 +75,16 @@
             <li id="navHome" class="nav-item">
               <a href="./index.html" class="nav-link">Home</a>
             </li>
-            <li id="navMission" class="nav-item">
+            <!-- <li id="navMission" class="nav-item">
               <a href="#" class="nav-link">Mission</a>
             </li>
             <li id="navVision" class="nav-item">
               <a href="#" class="nav-link">Vision</a>
-            </li>
+            </li> -->
             <li id="navGame" class="nav-item">
               <a href="#" class="nav-link current">Play the Game</a>
             </li>
-            <li class="nav-item">
+            <li id="navContact" class="nav-item">
               <a href="./contact.html" class="nav-link">Contact Us</a>
             </li>
           </ul>
@@ -177,15 +177,19 @@
         window.location.href = "./index.html";
       });
 
-      document.getElementById("navMission").addEventListener("touchend", () => {
-        const mjMission = document.getElementById("mjMission");
-        mjMission.play();
+      document.getElementById("navContact").addEventListener("touchend", () => {
+        window.location.href = "./contact.html";
       });
 
-      document.getElementById("navVision").addEventListener("touchend", () => {
-        const mjVision = document.getElementById("mjVision");
-        mjVision.play();
-      });
+      // document.getElementById("navMission").addEventListener("touchend", () => {
+      //   const mjMission = document.getElementById("mjMission");
+      //   mjMission.play();
+      // });
+
+      // document.getElementById("navVision").addEventListener("touchend", () => {
+      //   const mjVision = document.getElementById("mjVision");
+      //   mjVision.play();
+      // });
     </script>
 
     <!-- hitwebcounter Code START -->

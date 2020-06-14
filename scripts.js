@@ -13,15 +13,15 @@ document.querySelector('.close').addEventListener('click', () => {
 
 
 
-document.getElementById('navMission').addEventListener('touchend', () => {
-  const mjMission = document.getElementById('mjMission');
-  mjMission.play();
-})
+// document.getElementById('navMission').addEventListener('touchend', () => {
+//   const mjMission = document.getElementById('mjMission');
+//   mjMission.play();
+// })
 
-document.getElementById('navVision').addEventListener('touchend', () => {
-  const mjVision = document.getElementById('mjVision');
-  mjVision.play();
-})
+// document.getElementById('navVision').addEventListener('touchend', () => {
+//   const mjVision = document.getElementById('mjVision');
+//   mjVision.play();
+// })
 
 
 observer1 = new IntersectionObserver((entries) => {
