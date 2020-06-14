@@ -157,6 +157,7 @@ const showScore = () => {
 	textAlign(RIGHT);
 
 	text(`Stage ${limit}`, width - 10, 25);
+	
 
 	textSize(16);
 	text(`${hits} 💥`, width - 10, 50);
@@ -173,6 +174,7 @@ const showScore = () => {
 };
 
 const showStageScreen = () => {
+
 	let { limit } = game;
 	push();
 	background('orange');
@@ -184,7 +186,6 @@ const showStageScreen = () => {
 	textAlign(CENTER, CENTER);
 	text(`Stage ${limit}`, width / 2, height / 2);
 	pop();
-
 	noLoop();
 
 	setTimeout(() => {

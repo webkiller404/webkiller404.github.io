@@ -20,6 +20,8 @@ class Rocket extends Moveable {
 
 		this.score = 1000;
 
+		this.stageSpeed = 0.001;
+
 		this.draw();
 	}
 
@@ -73,7 +75,11 @@ class Rocket extends Moveable {
 		} else {
 			this.vel.add(this.acc);
 			this.pos.add(this.vel);
-			this.acc.mult(0);
+
+			this.stageSpeed = this.stageSpeed + game.total*0.00001;
+
+			this.acc.mult(this.stageSpeed);
+			
 		}
 	}
 
