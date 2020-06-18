@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:title" content="Direct Chandrar" />
+    <meta property="og:description" content="Experience the Life on Moon!" />
+    <meta property="og:image" content="./images/profile.png" />
+    <meta property="og:url" content="https://directchandrar.com/index.htm" />
+
+    <meta property="twitter:title" content="Direct Chandrar" />
+    <meta
+      property="twitter:description"
+      content="Experience the Life on Moon!"
+    />
+    <meta property="twitter:image" content="./images/profile.png" />
+
+    <meta name="Description" content="hub,goa,food,moon,chandrar,dining" />
+    <meta
+      name="google-site-verification"
+      content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="
+    />
+
+    <meta name="googlebot" content="index, follow" />
+    <link rel=icon href=./favicon.png>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Direct Chandrar | Life on Moon</title>
+    <!--Ion Icons-->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet" on Moon
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aldrich&display=swap"
+      rel="stylesheet"
+    />
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="container"
+        style="
+          width: 100%;
+          max-width: 98rem;
+          margin: 0 auto;
+          padding: 0 1.5rem;
+          background: linear-gradient(
+              135deg,
+              rgba(49, 24, 131, 0.9) 0%,
+              rgba(72, 56, 149, 0.8) 100%
+            ),
+            url(images/header-bg.jpg) center no-repeat;
+          background-size: cover;
+        "
+      >
+        <nav>
+          <div class="nav-brand">
+            <a href="index.html">
+              <img class="brand-logo" src="images/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+            </div>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <!-- <li id="navMission" class="nav-item">
+              <a href="#" class="nav-link">Mission</a>
+            </li>
+            <li id="navVision" class="nav-item">
+            <a href="#" class="nav-link">Vision</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="./game.html" class="nav-link">Play the Game</a>
+            </li>
+            <li class="nav-item">
+                <a href="./moon.html" class="nav-link current">Life on Moon</a>
+              </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div style="margin-top: 10rem; padding: 1rem; text-align: center;">
+        <p>Experience the Life on Moon at</p>
+        <h2 class="ads-intro">The HUB <span>Goa</span></h2>
+        <!-- <br>  
+          <h3>Contact: <span style="font-size: 20px; font-weight: 100;">webkiller404@gmail.com</span></h3>
+            <h3>Address: <span style="font-size: 13px; font-weight: 100;"><i>HNo. 404, Next to Earth, MJ Road, DirectChandrar Society, Moon, Milkyway.</i></span></h3> -->
+      </div>
+      <div class="ads">
+        <div id="img-1" class="img-1"></div>
+        <br>
+        <br>
+        <div id="img-2" class="img-2"></div>
+       <br>
+       <br>
+        <div id="img-3" class="img-3"></div>
+      </div>
+
+      <br><br><br>
+      <div class='ads-contact'>
+        <a href="./contact.html">Contact Us</a> for your Ads  
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2020 DirectChandrar. All rights reserved.</p>
+      <h3>Website Designed and maintained by <strong>The WebKiller</strong></h3>
+      <!-- <h4>webkiller404@gmail.com</h4> -->
+    </footer>
+
+    <script type="text/javascript" src="./scripts.js"></script>
+
+    <audio
+      name="mjMission"
+      id="mjMission"
+      hidden="true"
+      autostart="false"
+      src="./assets//mj-mission.mp3"
+    ></audio>
+    <audio
+      name="mjVision"
+      id="mjVision"
+      hidden="true"
+      autostart="false"
+      src="./assets//mj-vision.mp3"
+    ></audio>
+
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        style="width: 64px; height: 20px; margin-left: 40%;"
+        src="https://hitwebcounter.com/counter/counter.php?page=7439162&style=0007&nbdigits=8&type=page&initCount=10"
+        title="Web Counter"
+        alt="counter free"
+        border="0"
+      />
+    </a>
+
+    <script>
+      let imgObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0) {
+              
+            entry.target.classList.add("img-intro");
+          } else {
+            entry.target.classList.remove("img-intro");
+          }
+        });
+      });
+
+      const img1 = document.querySelector(".img-1");
+      const img2 = document.querySelector(".img-2");
+      const img3 = document.querySelector(".img-3");
+
+      if (img1 && img2 && img3) {
+        imgObserver.observe(img1);
+        imgObserver.observe(img2);
+        imgObserver.observe(img3);
+      }
+
+      setTimeout(() => {
+          const ads = document.querySelector('.ads');
+          ads.style.visibility = 'initial';
+      }, 500)
+    </script>
+  </body>
+</html>
