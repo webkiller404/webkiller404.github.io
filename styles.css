@@ -89,9 +89,9 @@ nav {
 
 .brand-logo {
   transform: rotate(45deg);
-    position: absolute;
-    width: 60px;
-    top: 15px;
+  position: absolute;
+  width: 60px;
+  top: 15px;
 }
 
 .close {
@@ -174,11 +174,11 @@ nav {
   background-position: center;
   background-size: cover;
   width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    box-shadow: 0 0 8px 4px #c5c5c5;
-    display: inline-block;
-    margin: 20px 0;
+  height: 10rem;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 4px #c5c5c5;
+  display: inline-block;
+  margin: 20px 0;
 }
 .title-heading {
   text-align: center;
@@ -210,7 +210,7 @@ nav {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  z-index: 0;     /*  1 */
+  z-index: 0; /*  1 */
 }
 .activities-grid-item::before {
   content: "";
@@ -227,63 +227,63 @@ nav {
   z-index: -1;
 }
 .star-gazing {
-    background: url("images/moon.jpg") center no-repeat fixed;
-    background-size: cover;
+  background: url("images/moon.jpg") center no-repeat fixed;
+  background-size: cover;
 }
 .hiking {
-    background: url("images/rocket.jpg") top no-repeat fixed;
+  background: url("images/rocket.jpg") top no-repeat fixed;
 }
 .camping {
-    background: url("images/save-goa.jpg") center no-repeat fixed;
+  background: url("images/save-goa.jpg") center no-repeat fixed;
 }
 
 .activities-grid-item i {
-    font-size: 4rem;
-    color: #eb648c;
+  font-size: 4rem;
+  color: #eb648c;
 }
 .activities-grid-item h1 {
-    font-family: Aldrich, sans-serif;
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    margin: 2rem 0;
+  font-family: Aldrich, sans-serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
 }
 
 /* Testimonial section css */
 .testimonials {
-    width: 100%;
-    height: 80vh;
-    background: linear-gradient(
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
       135deg,
       rgba(49, 24, 131, 0.9) 0%,
       rgba(72, 56, 149, 0.8) 100%
     ),
-    url("images/testimonials-bg.jpg") center no-repeat fixed;   /* parallax effect */
+    url("images/testimonials-bg.jpg") center no-repeat fixed; /* parallax effect */
   background-size: cover;
   position: relative;
 }
 .testimonials::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: 0;
-    width: 100%;
-    height: 4.7rem;
-    background: url("images/wave-small-reversed.png") center no-repeat;
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 4.7rem;
+  background: url("images/wave-small-reversed.png") center no-repeat;
 }
 .testimonial {
-    width: 100%;
-    color: #fafafa;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);   /* Centering strategy */
-    text-align: center;
+  width: 100%;
+  color: #fafafa;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering strategy */
+  text-align: center;
 }
 
-.social-links ul{
+.social-links ul {
   display: flex;
-    justify-content: center;
-    color: #403588;
+  justify-content: center;
+  color: #403588;
 }
 .social-links ul li {
   margin: 0 30px;
@@ -294,40 +294,40 @@ nav {
 }
 
 .testimonial-text-box {
-    padding: 0 1.5rem;
-    margin-bottom: 2rem;
-    position: relative;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
 }
 .testimonial-text-box i {
-    position: absolute;
-    top: -8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 8rem;
-    color: #eb648c;
-    opacity: .5;
-    z-index: -1;
+  position: absolute;
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8rem;
+  color: #eb648c;
+  opacity: 0.5;
+  z-index: -1;
 }
 .testimonial-customer img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 100%;
-    border: 3px solid #eb648c;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 3px solid #eb648c;
 }
 
 /* Begin Adventure css */
 .social-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .social-grid p {
-    color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.social-title p{
+.social-title p {
   font-size: 2rem;
 }
 
@@ -336,127 +336,125 @@ nav {
 }
 
 footer {
-    padding: 1.5rem 0;
-    background-color: #d7d4ed;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem 0;
+  background-color: #d7d4ed;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* Media queries */
 @media screen and (min-width: 350px) {
-    .main-message {
-        transform: translateY(40%);
-    }
+  .main-message {
+    transform: translateY(40%);
+  }
 }
 @media screen and (min-width: 470px) {
-    .hero::before {
-        height: 9.4rem;
-        background: url("images/wave-medium.png");
-        background-size: cover;
-    }
-    .testimonials::before {
-        height: 9.4rem;
-        background: url("images/wave-medium-reversed.png");
-        background-size: cover;
-    }
+  .hero::before {
+    height: 9.4rem;
+    background: url("images/wave-medium.png");
+    background-size: cover;
+  }
+  .testimonials::before {
+    height: 9.4rem;
+    background: url("images/wave-medium-reversed.png");
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 700px) {
-    header {
-        height: 8rem;
-    }
-    .nav-brand {
-        width: 3.5rem;
-    }
-    .nav-list {
-        width: initial;
-        height: initial;
-        background-color: transparent;
-        position: initial;
-        top: initial;
-        right: initial;
-        flex-direction: row;
-        transition: initial;
-    }
-    .menu-icons {
-        display: none;
-    }
+  header {
+    height: 8rem;
+  }
+  .nav-brand {
+    width: 3.5rem;
+  }
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+  }
+  .menu-icons {
+    display: none;
+  }
 
-    .nav-item {
-        margin: 0 2.5rem;
-    }
-    .nav-link, .current {
-        color: #fafafa;
-        position: relative;
-        font-size: 1.3rem;
-    }
+  .nav-item {
+    margin: 0 2.5rem;
+  }
+  .nav-link,
+  .current {
+    color: #fafafa;
+    position: relative;
+    font-size: 1.3rem;
+  }
 
-    .nav-link::before, .current::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -.5rem;
-        background-color: #eb648c;
-        width: 100%;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 650ms;
-    }
-    .current::before {
-        transform: scaleX(1);
-    }
-    .nav-link:hover::before {
-        transform: scaleX(1);
-    }
-    .hero {
-        height: 60vh;
-    }
-    .main-message {
-        transform: translateY(5%);
-    }
-    .title-heading h1 {
-        font-size: 2.5rem;
-    }
+  .nav-link::before,
+  .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    background-color: #eb648c;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+  }
+  .current::before {
+    transform: scaleX(1);
+  }
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+  .hero {
+    height: 60vh;
+  }
+  .main-message {
+    transform: translateY(5%);
+  }
+  .title-heading h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 950px) {
-    .hero::before {
-        height: 22.7rem;
-        background: url("images/wave-large.png");
-        background-size: cover;
-    }
-    .testimonials::before {
-        height: 22.7rem;
-        background: url("images/wave-large-reversed.png");
-        background-size: cover;
-    }
+  .hero::before {
+    height: 22.7rem;
+    background: url("images/wave-large.png");
+    background-size: cover;
+  }
+  .testimonials::before {
+    height: 22.7rem;
+    background: url("images/wave-large-reversed.png");
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero {
-        height: 75vh;
-    }
+  .hero {
+    height: 75vh;
+  }
 }
-
-
 
 .splash {
   background: url(./images/rocket.gif) center no-repeat;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    top: -10px;
-    z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: -10px;
+  z-index: 3;
 }
-
 
 /* Animation stuff */
 
-
 .fly-social {
-  animation: anim1 .7s ease-out;
+  animation: anim1 0.7s ease-out;
 }
 
 @keyframes anim1 {
@@ -469,7 +467,6 @@ footer {
     transform: translateX(0);
   }
 }
-
 
 .fly-intro {
   animation: flyIntro 2s ease-in;
@@ -484,7 +481,6 @@ footer {
     transform: translateY(0rem);
   }
 }
-
 
 .fly-intro-2 {
   animation: flyIntro 1.3s ease-in;
@@ -506,7 +502,12 @@ footer {
   max-width: 98rem;
   margin: 0 auto;
   padding: 0 1.5rem;
-  background: linear-gradient( 135deg, rgba(49, 24, 131, 0.9) 0%, rgba(72, 56, 149, 0.8) 100% ), url(images/header-bg.jpg) center no-repeat;
+  background: linear-gradient(
+      135deg,
+      rgba(49, 24, 131, 0.9) 0%,
+      rgba(72, 56, 149, 0.8) 100%
+    ),
+    url(images/header-bg.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -514,7 +515,6 @@ footer {
   margin: 0 auto;
   text-align: center;
   margin-top: 10rem;
- 
 }
 
 .game-body {
@@ -529,16 +529,92 @@ footer {
 
 .play-btn {
   display: inline-block;
-    background-color: #4161ff;
-    padding: 10px;
-    border-radius: 5px;
-    /* width: 100px; */
-    font-size: 20px;
-    color: white;
-    border: 1px solid #0023cf;
+  background-color: #4161ff;
+  padding: 10px;
+  border-radius: 5px;
+  /* width: 100px; */
+  font-size: 20px;
+  color: white;
+  border: 1px solid #0023cf;
 }
 
 .rule-title {
   font-size: 16px;
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.ads {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+}
+
+.ads-intro {
+  font-size: 3rem;
+    animation: adsIntro 1s ease-in-out;
+    font-weight: bold;
+}
+.ads-intro span {
+  font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 400;
+}
+@keyframes adsIntro {
+  0% {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.img-intro {
+  animation: imgIntro 1s ease-in;
+}
+@keyframes imgIntro {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.img-1 {
+  background: url(./images/hub1.jpeg) center no-repeat;
+  background-size: cover;
+  max-width: 60rem;
+  max-height: 60rem;
+  width: 100%;
+  height: 50rem;
+}
+.img-2 {
+  background: url(./images/hub2.jpeg) center no-repeat;
+  background-size: cover;
+  max-width: 60rem;
+  max-height: 60rem;
+  width: 100%;
+  height: 40rem;
+}
+.img-3 {
+  background: url(./images/hub3.jpeg) center no-repeat;
+  background-size: cover;
+  max-width: 60rem;
+  max-height: 60rem;
+  width: 100%;
+  height: 35rem;
+}
+
+.ads-contact {
+  text-align: center;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: lighter;
 }
